@@ -1,0 +1,28 @@
+nav {
+    height: 5rem;
+    width: 100%;
+    background-color: #6A1B4D;
+}
+
+.nav-title {
+    font-size: xx-large;
+    font-weight: 700;
+    color: #CAD5E2;
+    line-height: 2.5;
+    padding: 0 2rem;
+}
+
+nav ul {
+    float: right;
+    margin-right: 3rem;
+}
+
+nav li {
+    display: inline-block;
+
+    color: aliceblue;
+    font-size: 1rem;
+    font-weight: bold;
+    line-height: 2.5;
+    margin-right: 2rem;
+}
