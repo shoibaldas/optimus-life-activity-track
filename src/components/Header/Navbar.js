@@ -1,15 +1,22 @@
 import React from 'react';
-import './Navbar.css'
-const navbar = () => {
+import logo from '../../optimalogo.png';
+import './Navbar.css';
+
+const Navbar = () => {
     return (
-        <nav>
-            <label className="nav-title">Optimus Life</label>
-            <ul>
-                <li><a href=""></a>Home</li>
-                <li><a href=""></a>About</li>
-            </ul>
-        </nav>
+        <div className="navbar bg-gray-100">
+            <div className="flex-1">
+                <img className='logo' src={logo} alt="Logo" />
+                <a href='/' className="btn btn-ghost normal-case text-3xl text-violet-700">Optimus Life</a>
+            </div>
+            <div className="flex-none">
+                <ul className="menu menu-horizontal p-0">
+                    <li><a href='/' className='block p-3  md:hover:text-violet-700 md:no-underline md:hover:underline md:decoration-2 md:decoration-violet-700 md:underline-offset-8'>Home</a></li>
+                    <li><a href='/' className='block p-3  md:hover:text-violet-700 md:no-underline md:hover:underline md:decoration-2 md:decoration-violet-700 md:underline-offset-8'>About</a></li>
+                </ul>
+            </div>
+        </div>
     );
 };
 
-export default navbar;
+export default Navbar;
