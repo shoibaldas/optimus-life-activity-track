@@ -1,5 +1,5 @@
 import './App.css';
-import Activities from './components/Activity/Activities';
+import Activities from './components/Activities/Activities';
 import Navbar from './components/Header/Navbar'
 
 function App() {
