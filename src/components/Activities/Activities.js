@@ -34,11 +34,11 @@ const Activities = () => {
         swal("Good job!", "You clicked the button!", "success");
     }
     return (
-        <div >
+        <div>
             <h3 className='mt-10 mb-10 text-3xl font-semibold text-violet-700'><i class="fa-solid fa-person-running text-violet-700"></i> Select your today's activity</h3>
-            <div className='container mx-auto ml-8 flex flex-row justify-center'>
-                <div className="w-8/12">
-                    <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6'>
+            <div className='container flex lg:flex-row md:flex-col md:justify-center lg:mx-6'>
+                <div className="lg:w-8/12 md:mx-6">
+                    <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12'>
                         {
                             activities.map(activity => <Activity
                                 key={activity.id}
@@ -49,9 +49,9 @@ const Activities = () => {
                     </div>
                 </div>
 
-                <div className="w-4/12">
-                    <div className="mx-8">
-                        <div className="w-96 h-auto mb-8 bg-gray-300 rounded overflow-hidden shadow-lg">
+                <div className="lg:w-4/12">
+                    <div className="flex justify-center">
+                        <div className="w-96 h-auto lg:mb-8 md:mb-4 bg-gray-300 rounded overflow-hidden shadow-lg">
 
                             <Person></Person>
                             <Breakperiods
@@ -71,7 +71,7 @@ const Activities = () => {
                     </div>
                 </div>
             </div>
-            <div className='mt-20 flex flex-col justify-center items-center gap-4'>
+            <div className='lg:mt-20 md:mt-14 flex flex-col justify-center items-center gap-4'>
                 <h1 className='text-3xl mb-8 text-violet-700 font-bold'>Blog.</h1>
                 <div
                     className="max-w-screen-md bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
@@ -88,7 +88,7 @@ const Activities = () => {
                 <div
                     className="max-w-screen-md bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
                     <div className="p-5">
-                        <a href="#">
+                        <a href="/">
                             <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Difference between Props and State.</h5>
                         </a>
                         <p className="mb-3 font-normal text-gray-700 dark:text-gray-400 underline underline-offset-4"><span className='font-bold'>Props</span> are known as properties it can be used to pass data from one component to another. Props cannot be modified, read-only, and Immutable. </p>
