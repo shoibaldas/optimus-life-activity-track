@@ -12,7 +12,7 @@ const Navbar = () => {
             <div className="flex-none">
                 <ul className="menu menu-horizontal p-0">
                     <li><a href='/' className='block p-3  md:hover:text-violet-700 md:no-underline md:hover:underline md:decoration-2 md:decoration-violet-700 md:underline-offset-8'>Home</a></li>
-                    <li><a href='/' className='block p-3  md:hover:text-violet-700 md:no-underline md:hover:underline md:decoration-2 md:decoration-violet-700 md:underline-offset-8'>About</a></li>
+                    <li><a href='/' className='block p-3  md:hover:text-violet-700 md:no-underline md:hover:underline md:decoration-2 md:decoration-violet-700 md:underline-offset-8'>Blog</a></li>
                 </ul>
             </div>
         </div>
