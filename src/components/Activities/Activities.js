@@ -38,9 +38,9 @@ const Activities = () => {
     return (
         <div >
             <div className='mt-20 container mx-auto ml-8 flex flex-row justify-center'>
-                <div className="w-4/6">
-                    <div className="grid grid-cols-3 gap-y-10">
-                        {/*  */}
+                <div className="w-8/12">
+
+                    <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6'>
                         {
                             activities.map(activity => <Activity
                                 key={activity.id}
@@ -49,10 +49,11 @@ const Activities = () => {
                             ></Activity>)
                         }
                     </div>
+
                 </div>
 
-                <div className="w-2/6">
-                    <div className="grid gap-y-10">
+                <div className="w-4/12">
+                    <div className="mx-8">
                         <div className="w-96 h-auto mb-8 bg-gray-300 rounded overflow-hidden shadow-lg">
 
                             <Person></Person>
