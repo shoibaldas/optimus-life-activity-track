@@ -3,10 +3,7 @@ import Activity from '../Activity/Activity';
 import Breakperiods from '../Breakperiods/Breakperiods';
 import History from '../History/History';
 import Person from '../Person/Person';
-
-//tostify-import
-// import { ToastContainer, toast } from 'react-toastify';
-// import 'react-toastify/dist/ReactToastify.css';
+import swal from 'sweetalert';
 
 const Activities = () => {
     const [activities, setActivities] = useState([]);
@@ -33,8 +30,9 @@ const Activities = () => {
         setTimeSpended(newBreakTime);
     }
 
-    //const notify = () => toast("Wow so easy!");
-
+    const alert = () => {
+        swal("Good job!", "You clicked the button!", "success");
+    }
     return (
         <div >
             <h3 className='mt-10 mb-10 text-3xl font-semibold text-violet-700'><i class="fa-solid fa-person-running text-violet-700"></i> Select your today's activity</h3>
@@ -64,10 +62,10 @@ const Activities = () => {
                                 timeBreak={timeBreak}
                             ></History>
                             <div className='flex justify-center'>
-                                {/* <button
-                                className="bg-violet-800 font-semibold rounded px-16 py-2 mb-4 text-center text-white"
-                                onClick={notify}>Complete Activity</button>\ */}
-                                {/* <ToastContainer /> */}
+                                <button
+                                    className="bg-violet-800 font-semibold rounded px-16 py-2 mb-8 text-center text-white"
+                                    onClick={alert} >Complete Activity</button>
+
                             </div>
                         </div>
                     </div>
@@ -78,7 +76,7 @@ const Activities = () => {
                 <div
                     className="max-w-screen-md bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
                     <div className="p-5">
-                        <a href="#">
+                        <a href="/">
                             <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">How does react Work?</h5>
                         </a>
                         <p className="mb-3 font-normal text-gray-700 dark:text-gray-400 text-justify">  React is a JavaScript library for creating user interfaces that is declarative, fast, and customizable. In MVC, the 'V' represents the view. ReactJS is an open-source, component-based front end library that is exclusively responsible for the application's display layer. <br />
@@ -112,7 +110,7 @@ const Activities = () => {
                 <div
                     className="max-w-screen-md bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
                     <div className="p-5">
-                        <a href="#">
+                        <a href="/">
                             <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">UseEffect Api is used for other purposes than loading data?</h5>
                         </a>
                         <p className="mb-3 font-normal text-gray-700 dark:text-gray-400 text-justify">useEffect(callback, dependencies) is the hook that manages the side-effects in functional components.callback argument is a function to put the side-effect logic.dependencies is a list of dependencies of your side-effect: being props or state values. The purpose of the useEffect Hook is to eliminate the side effects of employing class-based components. For example, operations like as changing the DOM, retrieving data from API endpoints, configuring subscriptions or timers, and so on might have unintended consequences. </p>
