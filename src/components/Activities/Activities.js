@@ -37,9 +37,9 @@ const Activities = () => {
 
     return (
         <div >
-            <div className='mt-20 container mx-auto ml-8 flex flex-row justify-center'>
+            <h3 className='mt-10 mb-10 text-3xl font-semibold text-violet-700'><i class="fa-solid fa-person-running text-violet-700"></i> Select your today's activity</h3>
+            <div className='container mx-auto ml-8 flex flex-row justify-center'>
                 <div className="w-8/12">
-
                     <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6'>
                         {
                             activities.map(activity => <Activity
@@ -49,7 +49,6 @@ const Activities = () => {
                             ></Activity>)
                         }
                     </div>
-
                 </div>
 
                 <div className="w-4/12">

@@ -4,7 +4,7 @@ import './Navbar.css';
 
 const Navbar = () => {
     return (
-        <div className="navbar bg-gray-100">
+        <div className="navbar bg-gray-200 rounded">
             <div className="flex-1">
                 <img className='logo' src={logo} alt="Logo" />
                 <a href='/' className="btn btn-ghost normal-case text-3xl text-violet-700">Optimus Life</a>
