@@ -5,7 +5,7 @@
     "name": "Reading Book",
     "email": "mariecleveland@momentia.com",
     "address": "155 Woodruff Avenue, Interlochen, Delaware, 9202",
-    "time": 2
+    "time": 360
   },
   {
     "_id": "63349d0e6b8a3e179cdd2dcc",
@@ -13,7 +13,7 @@
     "name": "Music",
     "email": "jilloneil@momentia.com",
     "address": "385 Granite Street, Abrams, Louisiana, 6139",
-    "time": 10
+    "time": 120
   },
   {
     "_id": "63349d0e61cb7f5b03b46c3e",
@@ -29,7 +29,7 @@
     "name": "Swimming",
     "email": "careycooke@momentia.com",
     "address": "111 Franklin Avenue, Fruitdale, Northern Mariana Islands, 1887",
-    "time": 20
+    "time": 25
   },
   {
     "_id": "63349d0e2f227e42b1e98d64",
@@ -37,7 +37,7 @@
     "name": "Sleeping",
     "email": "estesbailey@momentia.com",
     "address": "711 Dunham Place, Vivian, Marshall Islands, 4501",
-    "time": 7
+    "time": 480
   },
   {
     "_id": "63349d0e0c2253252e736d99",
@@ -45,7 +45,7 @@
     "name": "Cooking",
     "email": "bullocknicholson@momentia.com",
     "address": "619 Hillel Place, Ruffin, Rhode Island, 6165",
-    "time": 1.5
+    "time": 120
   },
   {
     "_id": "63349d0e61ad96e6e495e3b4",
