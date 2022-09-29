@@ -36,8 +36,8 @@ const Activities = () => {
     return (
         <div>
             <h3 className='mt-10 mb-10 text-3xl font-semibold text-violet-700'><i class="fa-solid fa-person-running text-violet-700"></i> Select your today's activity</h3>
-            <div className='container flex lg:flex-row md:flex-col md:justify-center lg:mx-6'>
-                <div className="lg:w-8/12 md:mx-6">
+            <div className='container flex flex-col lg:flex-row md:flex-col md:justify-center md:mx-6'>
+                <div className="lg:w-8/12 md:mx-6 mx-4">
                     <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12'>
                         {
                             activities.map(activity => <Activity
@@ -51,7 +51,7 @@ const Activities = () => {
 
                 <div className="lg:w-4/12">
                     <div className="flex justify-center">
-                        <div className="w-96 h-auto lg:mb-8 md:mb-4 bg-gray-300 rounded overflow-hidden shadow-lg">
+                        <div className="md:w-96 h-auto w-72 mb-12 lg:mb-8 md:mb-4 bg-gray-300 rounded overflow-hidden shadow-lg">
 
                             <Person></Person>
                             <Breakperiods
@@ -71,7 +71,7 @@ const Activities = () => {
                     </div>
                 </div>
             </div>
-            <div className='lg:mt-20 md:mt-14 flex flex-col justify-center items-center gap-4'>
+            <div className='md:mt-8 flex flex-col justify-center items-center gap-4'>
                 <h1 className='text-3xl mb-8 text-violet-700 font-bold'>Blog.</h1>
                 <div
                     className="max-w-screen-md bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
