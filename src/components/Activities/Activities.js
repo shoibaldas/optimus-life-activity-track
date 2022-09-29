@@ -31,17 +31,17 @@ const Activities = () => {
     }
 
     const alert = () => {
-        swal("Good job!", "You clicked the button!", "success");
+        swal("Good job!", "You have finished!", "success");
     }
     return (
         <div>
-            <h3 className='mt-10 mb-10 text-3xl font-semibold text-violet-700'><i class="fa-solid fa-person-running text-violet-700"></i> Select your today's activity</h3>
+            <h3 className='mt-10 mb-10 text-3xl font-semibold text-violet-700'><i className="fa-solid fa-person-running text-violet-700"></i> Select your today's activity</h3>
             <div className='container flex flex-col lg:flex-row md:flex-col md:justify-center md:mx-6'>
                 <div className="lg:w-8/12 md:mx-6 mx-4">
                     <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12'>
                         {
                             activities.map(activity => <Activity
-                                key={activity.id}
+                                key={activity._id}
                                 activity={activity}
                                 addBreakTime={addBreakTime}
                             ></Activity>)
